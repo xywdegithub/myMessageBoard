@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../res/css/weui.css" />
+	</head>
+	<body>
+		<a href="/">首页</a>
+		<form action="/getData" method="post">
+            <div class="weui-cells__title">文本框</div>
+            <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" name="name" type="text" placeholder="请输入文本">
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells__title">文本域</div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3" name="content"></textarea>
+                </div>
+            </div>
+        <button class="weui-btn weui-btn-primary" type="submit">提交</button>
+		</form>
+	</body>
+</html>

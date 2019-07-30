@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../res/css/weui.css" />
+	</head>
+	<body>
+		<a class="weui-btn weui-btn_primary" href="write.html">发表留言</a>
+		<div class="weui-cells">
+			{{each list}}
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>{{$value.name}}</p>
+                      <p>{{$value.content}}</p>
+                </div>
+                <div class="weui-cell__ft">{{$value.datetime}}</div>
+            </div>
+            {{/each}}
+        </div>
+        
+	</body>
+</html>
